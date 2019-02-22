@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Home</title>
 </head>
 <body>
-<h1>Home</h1>
+<h1>Welcome to home page</h1>
+
+<h2>Latest posts</h2>
+    {% for post in posts.all%}
+        {{post.id}}
+        <br/>
+        {{post.pub_date_formatted}}
+        <br/>
+        {{post.summary}}
+        <br/>
+        <img src="{{post.image.url}}"/>
+        <br/>
+        <br/>
+    {% endfor %}
 </body>
 </html>

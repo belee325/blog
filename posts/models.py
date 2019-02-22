@@ -6,3 +6,12 @@ class Post(models.Model):
     pub_date = models.DateTimeField()
     image = models.ImageField(upload_to='media/')
     body = models.TextField()
+
+    def __str__(self):
+        return self.title
+
+    def pub_date_formatted(self):
+        return self.pub_date.strftime('%d %b %Y')
+
+    def summary(self):
+        return self.body[:100]
