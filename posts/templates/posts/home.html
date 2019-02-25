@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+              integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+              crossorigin="anonymous">
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,7 +25,7 @@
             <div class="collapse navbar-collapse" id="mynav">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">About</a>
+                    <a class="nav-item nav-link" href="{%url 'about'%}">About</a>
                     <a class="nav-item nav-link" href="https://www.twitter.com/">Twitter</a>
                 </div>
             </div>
@@ -31,9 +33,9 @@
 
 
         <div class="container">
-            <h1 class = "text-center">Welcome to home page</h1>
+            <h1 class="text-center">Welcome to home page</h1>
             {% load static %}
-            <img src = "{% static '../static/posts/home.jpg' %}" />
+            <img src="{% static '../static/posts/home.jpg' %}"/>
             <h2>Latest posts</h2>
             <hr/>
 
